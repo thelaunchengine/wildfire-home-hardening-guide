@@ -755,8 +755,8 @@ var APP_DATA = {
         "target": "5-windows"
       },
       {
-        "yaw": 1.968841141717454,
-        "pitch": 0.06521193339416875,
+        "yaw": 1.5404350536516862,
+        "pitch": 0.29478466178748874,
         "rotation": 0,
         "target": "7-landscaping"
       },
@@ -1192,6 +1192,42 @@ var APP_DATA = {
         "pitch": 0.5106005374757139,
         "title": "<span class='homeevaluationrequest'>Home Evaluation Request</span>",
         "text": '<div hh-include-html="chapters/home-evaluation-request.html"></div>'
+      }]
+    },
+    {
+      "id": "17-tips",
+      "name": "Choosing a Contractor",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 2048,
+      "initialViewParameters": {
+        "yaw": 0.21027227171144425,
+        "pitch": 0.2794370924145184,
+        "fov": 1.2634123859167636
+      },
+      "linkHotspots": [],
+      "infoHotspots": [{
+        "yaw": -0.20159798748530733,
+        "pitch": 0.5106005374757139,
+        "title": "<span class='tips'>Choosing a Contractor</span>",
+        "text": '<div hh-include-html="chapters/10-tips.html"></div>'
       }]
     }
   ],

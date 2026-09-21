@@ -318,7 +318,7 @@
       pdfWrapper.classList.add('info-hotspot-pdf-wrapper');
       var _d_pdf = document.createElement('div');
       _d_pdf.classList.add('info-hotspot-pdf');
-      _d_pdf.innerHTML = '<a href=' + hotspot.pdf + ' id="pdfDlBtn" target="_blank"><img class="pdfDlIcon" src="./assets/images/hh-icon3.png"></a>';
+      _d_pdf.innerHTML = '<a href=' + hotspot.pdf + ' id="pdfDlBtn-' + hotspot.title.replace(/[^\w\s]|_/g, '').replace(/\s+/g, '-').toLowerCase() + '" target="_blank"><img class="pdfDlIcon" src="./assets/images/hh-icon3.png"></a>';
       pdfWrapper.appendChild(_d_pdf);
     }
 
@@ -470,8 +470,10 @@
       switchScene(scenes[11]);
     } else if (valhash.indexOf("codespermits") != -1) {
       switchScene(scenes[10]);
-    }else if (valhash.indexOf("exteriorgelsfoamssprinklers") != -1) {
+    } else if (valhash.indexOf("exteriorgelsfoamssprinklers") != -1) {
       switchScene(scenes[15]);
+    } else if (valhash.indexOf("tips") != -1) {
+      switchScene(scenes[16]);
     } else {
       switchScene(scenes[0]);
     }
